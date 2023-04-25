@@ -274,16 +274,14 @@ figure:hover .redes {
 .seccion-temporadas {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     align-items: center;
     justify-content: center;
-    width: 100%;
     text-align: center;
 }
 
 .temporadas-imagenes {
     display: flex;
-    width: 600px;
+    width: 550px;
     height: 430px;
     margin: 2rem 0 2rem 0;
 }
@@ -337,6 +335,11 @@ footer {
     transform: scale(1.1);
 }
 
+
+a {
+    color: var(--color-general);
+}
+
 /*MEDIA QUERYS*/
 
 @media (min-width:1440px) {
@@ -384,6 +387,11 @@ footer {
 
     .nav-pagina {
         flex-direction: row;
+
+    }
+
+    .nav-pagina li {
+        width: 100%;
     }
 
     .seccion-biografia,
@@ -418,6 +426,7 @@ footer {
 
 
 
+
 }
 
 @media (max-width:600px) {
@@ -442,8 +451,9 @@ footer {
 
 
     .temporadas-imagenes {
-        width: 100%;
-        height: 100%;
+        width: 300px;
+        height: 400px;
+
     }
 
     footer {
@@ -459,6 +469,12 @@ footer {
 }
 
 @media (max-width:350px) {
+
+    .seccion-temporadas {
+        width: 300px;
+        height: 100%;
+
+    }
 
     .seccion-biografia {
         padding: 0;
